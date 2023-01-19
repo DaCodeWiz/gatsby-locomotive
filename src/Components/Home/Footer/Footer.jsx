@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Footer() {
 	// Personal Links
-
     const footerContainer = useRef(null)
     const heading0 = useRef(null)
     const heading1 = useRef(null)
@@ -60,8 +59,8 @@ export default function Footer() {
 						<div className='footer-list'>
 							<ul className='link-list'>
 								<li><a href='/#'>jpearsonbusiness@gmail.com</a></li>
-								<li><a href='https://www.linkedin.com/in/jakepearson123/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></li>
-								<li><a href='https://www.dribbble.com/jopearson' target='_blank' rel='noopener noreferrer'>Dribbble</a></li>
+								<li><a href="https://www.linkedin.com/in/jakepearson123/" target='_blank' rel='noopener noreferrer'>LinkedIn</a></li>
+								<li><a href="https://www.dribbble.com/jopearson" target='_blank' rel='noopener noreferrer'>Dribbble</a></li>
 								<li><a href='https://www.behance.net/jakepearson5' target='_blank' rel='noopener noreferrer'>Behance</a></li>
 								<li><a href='https://github.com/DaCodeWiz' target='_blank' rel='noopener noreferrer'>GitHub</a></li>
 							</ul>

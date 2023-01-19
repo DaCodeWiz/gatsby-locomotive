@@ -4,6 +4,8 @@ import {ScrollTrigger} from "gsap/ScrollTrigger"
 import React, {useRef, useEffect} from "react"
 import ScrollCTA from '../ScrollCTA/ScrollCTA'
 import BG from '../../../images/laanding-2.jpeg'
+// import Navbar from "../Navbar";
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -63,6 +65,7 @@ export default function Hero() {
                 window.cursorIcon ? window.cursorIcon.hide() : null
             }>
             <ScrollCTA/>
+            {/*<Navbar />*/}
             <div className='content-width column'>
                 <div
                     className='hero-background loading-transition'
