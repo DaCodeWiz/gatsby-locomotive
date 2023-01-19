@@ -1,9 +1,9 @@
 import './Hero.css'
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
-import {useRef, useEffect} from "react"
+import React, {useRef, useEffect} from "react"
 import ScrollCTA from '../ScrollCTA/ScrollCTA'
-import BG from '../../../imgs/laanding-2.jpeg'
+import BG from '../../../images/laanding-2.jpeg'
 
 gsap.registerPlugin(ScrollTrigger)
 

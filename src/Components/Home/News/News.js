@@ -1,11 +1,11 @@
 import './News.css'
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import vid1 from '../../../imgs/caspian.mp4'
-import img2 from '../../../imgs/sebastien-bourguet-ZI1FT0B68K8-unsplash.jpg'
-import img3 from '../../../imgs/casey-olsen-2s11AHnb_SU-unsplash.jpg'
-import img4 from '../../../imgs/video1.mp4'
+import vid1 from '../../../images/caspian.mp4'
+import img2 from '../../../images/sebastien-bourguet-ZI1FT0B68K8-unsplash.jpg'
+import img3 from '../../../images/casey-olsen-2s11AHnb_SU-unsplash.jpg'
+import img4 from '../../../images/video1.mp4'
 
 gsap.registerPlugin(ScrollTrigger)
 

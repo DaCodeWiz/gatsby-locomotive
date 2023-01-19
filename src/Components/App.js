@@ -1,8 +1,8 @@
-import './shared.css'
-import './fonts.css'
-import { useEffect } from "react"
+import '../shared.css'
+import '../fonts.css'
+import React, { useEffect } from "react"
 import Lenis from '@studio-freight/lenis'
-import Home from "./Components/Home/Home"
+import Home from "./Home/Home"
 // import LoadingScreen from "./Components/LoadingScreen/LoadingScreen"
 // import CursorIcon from './Components/CursorIcon/CursorIcon'
 

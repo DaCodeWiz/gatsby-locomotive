@@ -1,7 +1,8 @@
 import './Footer.css'
-import { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import footerVid from '../../../vids/footer-3.mp4'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -75,7 +76,7 @@ export default function Footer() {
 						disablePictureInPicture=''
 						className='video'
 						autoPlay='autoplay'>
-						<source src='/footer-3.mp4' type='video/mp4' />
+						<source src={footerVid} type='video/mp4' />
 					</video>
 				</div>
 			</footer>

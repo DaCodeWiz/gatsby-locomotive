@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import './ScrollCTA.css'
 import gsap from 'gsap'
 

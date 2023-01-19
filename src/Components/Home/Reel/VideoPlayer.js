@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './VideoPlayer.css'
 import gsap from 'gsap'
-import Ad from '../../../imgs/Advertisement.mp4'
+import payhip from '../../../vids/payhipUwU.mp4'
 
 const VideoPlayer = ({ handleClick, handleScroll }) => {
 
@@ -13,18 +13,16 @@ const VideoPlayer = ({ handleClick, handleScroll }) => {
 
     const onClick = () => {
         handleClick()
-        window.cursorIcon.hide()
     }
 
     const onWheel = () => {
         handleScroll()
-        window.cursorIcon.hide()
     }
 
     return (
-        <div ref={container} onClick={onClick} onWheel={onWheel} className="video-player" onMouseMove={() => window.cursorIcon.show('Close')} onMouseLeave={() => window.cursorIcon.hide()} >
+        <div ref={container} onClick={onClick} onWheel={onWheel} className="video-player" >
             <video autoPlay="autoplay">
-                <source src={Ad} type="video/mp4" />
+                <source src={payhip} type="video/mp4" />
             </video>
         </div>
     )

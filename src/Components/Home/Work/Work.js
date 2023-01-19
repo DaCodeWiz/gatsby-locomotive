@@ -1,11 +1,11 @@
 import './Work.css'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { useRef, useEffect } from "react"
-import WK1 from '../../../imgs/primera.mp4'
-import WK2 from '../../../imgs/work-2.mp4'
-import beats from '../../../imgs/beats-ad.mp4'
-import primeraSC from '../../../imgs/primera-sc.png'
+import React, { useRef, useEffect } from "react"
+import WK1 from '../../../images/primera.mp4'
+import WK2 from '../../../images/work-2.mp4'
+import beats from '../../../images/beats-ad.mp4'
+import primeraSC from '../../../images/primera-sc.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
