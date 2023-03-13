@@ -1,40 +1,40 @@
-import '../shared.css'
-import '../fonts.css'
-import React, { useEffect } from "react"
-import Lenis from '@studio-freight/lenis'
-import Home from "./Home/Home"
-// import LoadingScreen from "./Components/LoadingScreen/LoadingScreen"
-// import CursorIcon from './Components/CursorIcon/CursorIcon'
+/** @format */
+
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import Lenis from '@studio-freight/lenis';
+import Loadable from 'react-loadable';
+import Loading from './LoadingScreen/Loading';
+import MouseFollower from 'mouse-follower'
+import '../styles/index.scss';
+
+MouseFollower.registerGSAP(gsap);
+const cursor = new MouseFollower();
+const HomeLazy = Loadable({
+	loader: () => import('./Home/Home'),
+	loading: () => <Loading />,
+});
 
 export default function App() {
+	useEffect(() => {
+		const lenis = new Lenis({
+			lerp: .14
+		})
 
-  // const [loadingVisible, setLoadingVisible] = useState(true)
+		lenis.on('lenis-scroll');
 
-  //Create cursor icon
-  // useEffect(() => { new CursorIcon() }, [])
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		};
 
-  /**
-   * Smooth scroll
-   * and unlock scrolling after loading is complete
-   */
-  useEffect(() => {
-    setTimeout(() => {
-      const lenis = new Lenis({
-        lerp: .1,
-        smooth: true,
-      })
-      const scrollFn = () => {
-        lenis.raf()
-        requestAnimationFrame(scrollFn)
-      }
-      requestAnimationFrame(scrollFn)
-    }, 3800)
-  }, [])
+		requestAnimationFrame(raf);
+	}, []);
 
-  return (
-    <div className="center column">
-       {/*{loadingVisible ? <LoadingScreen setLoadingVisible={setLoadingVisible} /> : null}*/}
-      <Home />
-    </div>
-  )
+	return (
+		<div className='center column'>
+			<Loading />
+			<HomeLazy />
+		</div>
+	);
 }

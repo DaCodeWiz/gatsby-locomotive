@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import React, { useRef, useEffect, useState } from "react"
 import VideoPlayer from './VideoPlayer'
 import bgVid from '../../../vids/payhipUwU.mp4'
-import CursorIcon from "../../CursorIcon/CursorIcon";
 gsap.registerPlugin(ScrollTrigger)
 
 

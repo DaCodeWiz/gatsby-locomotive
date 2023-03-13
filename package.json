@@ -1,37 +1,49 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "private": true,
-  "description": "app",
-  "author": "DaCodeWiz",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@studio-freight/lenis": "^0.1.8",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.1",
-    "gatsby": "^5.4.2",
-    "gatsby-plugin-image": "^3.4.0",
-    "gatsby-plugin-sharp": "^5.4.0",
-    "gatsby-source-filesystem": "^5.4.0",
-    "gatsby-transformer-sharp": "^5.4.0",
-    "gsap": "^3.10.4",
-    "nth-check": "^2.1.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.7.0",
-    "react-scripts": "5.0.1",
-    "serve": "^14.1.2",
-    "web-vitals": "^2.1.4"
-  }
+	"name": "app",
+	"version": "1.0.0",
+	"private": true,
+	"description": "app",
+	"author": "DaCodeWiz",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@studio-freight/lenis": "^1.0.0",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^14.0.0",
+		"@testing-library/user-event": "^14.4.3",
+		"axios": "^1.2.1",
+		"gatsby": "^5.7.0",
+		"gatsby-plugin-image": "^3.4.0",
+		"gatsby-plugin-postcss": "^6.7.0",
+		"gatsby-plugin-sass": "^6.7.0",
+		"gatsby-plugin-sharp": "^5.4.0",
+		"gatsby-source-filesystem": "^5.4.0",
+		"gatsby-transformer-sharp": "^5.4.0",
+		"gsap": "^3.11.4",
+		"imagesloaded": "^5.0.0",
+		"mouse-follower": "^1.1.2",
+		"pace-js": "^1.2.4",
+		"postcss": "^8.4.21",
+		"react": "^18.2.0",
+		"react-dom": "^18.1.0",
+		"react-loadable": "^5.5.0",
+		"react-router-dom": "^6.7.0",
+		"react-scripts": "5.0.1",
+		"sass": "^1.59.2",
+		"serve": "^14.1.2",
+		"web-vitals": "^3.3.0"
+	},
+	"devDependencies": {
+		"css-loader": "^6.7.3",
+		"postcss-loader": "^7.0.2",
+		"sass-loader": "^13.2.0",
+		"style-loader": "^3.3.1"
+	}
 }

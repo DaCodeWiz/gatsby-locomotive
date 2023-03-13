@@ -1,8 +1,8 @@
-a {
+.block a {
     text-decoration: none;
     color: #dedfe1;
 }
-a:hover{
+.block a:hover {
     cursor: pointer;
 }
 
@@ -57,9 +57,9 @@ footer hr {
     font-size: 1.2vw;
 }
 
-ul {
-    padding-bottom: 10vh;
-    list-style: none;
+.footer-list ul {
+    padding-bottom: 8vh;
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -67,7 +67,7 @@ ul {
     transition: all 350ms;
 }
 
-ul:hover {
+.footer-list ul:hover {
     cursor: pointer;
     transform: scale(1.2);
     text-decoration: underline;

@@ -3,9 +3,10 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import React, { useRef, useEffect } from "react"
 import WK1 from '../../../images/primera.mp4'
-import WK2 from '../../../images/work-2.mp4'
+import WK2 from '../../../vids/munkeyTrailer.mp4'
 import beats from '../../../images/beats-ad.mp4'
 import primeraSC from '../../../images/primera-sc.png'
+import munkeyTrailer from '../../../images/MunkeyPic.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -112,7 +113,7 @@ export default function Work(){
 						ref={image1}
 						onMouseEnter={handleMouseEnter}
 						onMouseLeave={handleMouseLeave}>
-						<img src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1055&q=80' alt={'picture of dude being cash money'}/>
+						<img src={munkeyTrailer} alt={'picture of dude being cash money'} className='munkeyTrailer' />
 						<video
 							playsInline=''
 							loop='loop'
@@ -124,9 +125,9 @@ export default function Work(){
 						<div className='text-wrapper'>
 							<p>
 									<span>
-										<strong>Under Development </strong>
+										<strong>Munkey AI </strong>
 									</span>
-								<span>photography portfolio</span>
+								<span>ChatGPT Remake</span>
 							</p>
 						</div>
 					</div>
@@ -165,7 +166,7 @@ export default function Work(){
 					className='block'
 					onMouseEnter={handleMouseEnter}
 					onMouseLeave={handleMouseLeave}>
-					<img src='https://images.unsplash.com/photo-1627697823116-42877786ac26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt={'dude is being extremely cash money'}/>
+					<img src='https://images.unsplash.com/photo-1627697823116-42877786ac26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' className='beats-pic' alt={'dude is being extremely cash money'}/>
 					<video
 						playsInline=''
 						loop='loop'
@@ -177,7 +178,7 @@ export default function Work(){
 					<div className='text-wrapper'>
 						<p>
 								<span>
-									<strong>Coming Soon</strong>
+									<strong>Coming Soon </strong>
 								</span>
 							<span>eCommerce store</span>
 						</p>

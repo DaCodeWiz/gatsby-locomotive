@@ -48,7 +48,6 @@
     display: none;
     pointer-events: none;
     transition: all 350ms ease-in-out;
-
 }
 
 .text-wrapper {
@@ -87,6 +86,8 @@
     height: 32.84722vw;
     margin-bottom: 11.59722vw;
     margin-top: 15vh;
+    margin-left: 2vw;
+    max-width: 90%;
 }
 
 #block-2 {
@@ -101,4 +102,8 @@
     font-size: 1.66667vw;
     line-height: 2vh;
     font-weight: 300;
+}
+
+.beats-pic {
+    width: 100%;
 }
